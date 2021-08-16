@@ -2,16 +2,6 @@
 import React, { useState } from 'react';
 import './../styles/App.css';
 
-function ID() {
-  let id = 0;
-  return function () {
-    id++;
-    return id;
-  };
-}
-
-const getNextId = ID();
-
 function ListItem(props) {
   const { children, onModify, onDelete } = props;
 
